@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+    <ul>
+        {% for segment in segments %}
+            <li>{{ segment.id }}:
+                <label>{{ segment.src }}
+                <textarea>{{ segment.target }}</textarea>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
